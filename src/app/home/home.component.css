@@ -1,0 +1,67 @@
+*{
+    font-family: montserrat;
+}
+body{
+    background: f1fbff;
+}
+.selection-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 350px;
+    color: #000;
+    
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 7);
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-Slight .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+
+.teacher .card-body{
+    font-size: 20px;
+}
+footer{
+    background-color: rgb(146, 146, 150);
+    margin-top: 50px;
+}
+

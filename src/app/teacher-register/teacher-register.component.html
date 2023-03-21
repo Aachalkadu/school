@@ -1,0 +1,57 @@
+<div style="margin-left: 25%;">
+
+    <form>
+        <div class="container">
+            <div class="input">
+                <h1>Registration Form</h1>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Enter full name" class="form-control" name="name"
+                            [(ngModel)]="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter valid email address" class="form-control" name="email"
+                            [(ngModel)]="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="phnNo">PhnNo</label>
+                        <input type="tel" placeholder="Enter contact No." class="form-control" name="PhnNo"
+                            [(ngModel)]="PhnNo" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter password" class="form-control" name="password"
+                            [(ngModel)]="password" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="text" placeholder="confirm password" class="form-control" name="confirmpassword"
+                            [(ngModel)]="confirmpassword" required>
+                    </div>
+                    <span class="gender-title">Gender</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="gender">Male</label>
+                        <input type="radio" na`me="gender" id="female">
+                        <label for="gender">Female</label>
+                    </div>
+
+                    <div class="button-container">
+                        <!-- <button type="submit">Register</button>  -->
+                        <input type="submit" class="btn" (click)="Register()" value="register">
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </form>
+    <br><br>
+</div>

@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><span class="text warning"></span>School</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/about">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/student-profile">Student Profile </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/student-dashboard">Student Facilities</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" >ContactUs</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a [routerLink]="['/login']" class="nav-link"><b>Login</b></a>
+                </li> -->
+                <!-- Dropdown -->
+
+
+                <!-- <div ngbDropdown class="d-inline-block"> -->
+                <button type="button" class="btn btn-outline-primary" routerLink="/login">
+                    Login
+                </button>
+                <!-- <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <a routerLink="/login"> <button ngbDropdownItem>Student</button></a>
+                        <a routerLink="/login"> <button ngbDropdownItem>Teacher</button></a>
+                        <a routerLink="/login"> <button ngbDropdownItem>Admin</button></a>
+                    </div>
+                </div> -->
+
+                <div ngbDropdown class="d-inline-block">
+                    <button type="button" class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>
+                        Register
+                    </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                        <a routerLink="/student-register"> <button ngbDropdownItem>Student</button></a>
+                        <a routerLink="/teacher-register"> <button ngbDropdownItem>Teacher </button></a>
+                    </div>
+                </div>
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<br><br><br>

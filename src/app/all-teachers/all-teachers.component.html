@@ -1,0 +1,31 @@
+<!-- Teacher section -->
+
+<section id="teacher" class="teacher section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Our Teacher Staff</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Tenet</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div *ngFor="let teacher of teachers" class="col-4 col-md-4 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <img [src]="teacher.url" width="140" height="140">
+                            <i class="bi bi-book"></i>
+                            <h3 class="card-title"> {{teacher.name}} </h3>
+                            <p class="lead"> {{teacher.subject}} </p>
+                            <button class="btn btn-warning text-dark">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
