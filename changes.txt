@@ -1,0 +1,9 @@
+++ add bg in student profile 
+
+ make login page proper - add sweet alert
+
+ make register page proper for student, teacher with proper fields
+
+++ Not Registered? Register as student | teacher
+
+++ remove Student  from login page
