@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-student-register',
@@ -12,6 +13,7 @@ export class StudentRegisterComponent {
   PhnNo: string;
   password: string;
   confirmpassword: string;
+  gender: string;
 
   constructor() { }
 
@@ -20,9 +22,25 @@ export class StudentRegisterComponent {
   }
 
   Register() {
-    if (this.name == "Admin" && this.email == 'admin@123' && this.password == "123") {
-      console.log(" ");
+
+    let studentDetails = {
+      "name": this.name,
+      "email": this.email,
+      "PhnNo": this.PhnNo,
+      "password": this.password,
+      "confirmpassword": this.confirmpassword,
+      "gender": this.gender
     }
+
+    console.log(studentDetails)
+
+    Swal.fire({
+      title: 'Welcome ' + this.name,
+      text: 'You are Registered successfully',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    })
+
   }
 
 }

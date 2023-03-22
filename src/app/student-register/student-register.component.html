@@ -32,15 +32,17 @@
                     </div>
                     <span class="gender-title">Gender</span>
                     <div class="gender-category">
-                        <input type="radio" name="gender" id="male">
+                        <input type="radio" name="gender" [(ngModel)]="gender" id="male" value="male">
                         <label for="gender">Male</label>
-                        <input type="radio" name="gender" id="female">
+                        <input type="radio" name="gender" [(ngModel)]="gender" id="female" value="female">
                         <label for="gender">Female</label>
                     </div>
 
                     <div class="button-container">
                         <!-- <button type="submit">Register</button>  -->
-                        <input type="submit" class="btn" (click)="Register()" value="register">
+                        <input type="submit" class="btn"
+                            [disabled]="!name || !email || !PhnNo || !password || !confirmpassword || !gender"
+                            (click)="Register()" value="register">
                     </div>
 
 
