@@ -1,7 +1,10 @@
 # Run project (imp)
 
-Step 1 : npm install
-Step 2 : ng serve
+Step 1 : `npm install`
+
+Step 2 : `ng serve`
+
+
 
 
 # Pages
