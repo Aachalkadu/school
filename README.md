@@ -1,3 +1,9 @@
+# Run project (imp)
+
+Step 1 : npm install
+Step 2 : ng serve
+
+
 # Pages
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
